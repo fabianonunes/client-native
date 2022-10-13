@@ -649,7 +649,6 @@ func TestCreateEditDeleteBackend(t *testing.T) {
 			},
 		},
 		HTTPConnectionMode:   "http-keep-alive",
-		HTTPKeepAlive:        "enabled",
 		ConnectTimeout:       &tOut,
 		ExternalCheck:        "enabled",
 		ExternalCheckCommand: "/bin/false",
@@ -778,7 +777,6 @@ func TestCreateEditDeleteBackend(t *testing.T) {
 				Type:     "rewrite",
 			},
 			HTTPConnectionMode: "httpclose",
-			Httpclose:          "enabled",
 			ConnectTimeout:     &tOut,
 			StickTable: &models.ConfigStickTable{
 				Expire: &e,

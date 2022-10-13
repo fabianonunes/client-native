@@ -2635,15 +2635,6 @@ definitions:
           x-display-name: HTTP bufferrequest
         http-check:
           $ref: '#/definitions/http_check'
-        http-keep-alive:
-          enum:
-          - enabled
-          - disabled
-          type: string
-          x-dependency:
-            mode:
-              value: http
-          x-display-name: HTTP keep-alive
         http-no-delay:
           enum:
           - enabled
@@ -2653,15 +2644,6 @@ definitions:
             mode:
               value: http
           x-display-name: HTTP low interactive delays
-        http-server-close:
-          enum:
-          - enabled
-          - disabled
-          type: string
-          x-dependency:
-            mode:
-              value: http
-          x-display-name: HTTP server close
         http-use-htx:
           enum:
           - enabled
@@ -2735,15 +2717,6 @@ definitions:
           x-dependency:
             mode:
               value: http
-        httpclose:
-          enum:
-          - enabled
-          - disabled
-          type: string
-          x-dependency:
-            mode:
-              value: http
-          x-display-name: HTTP connection closing
         id:
           type: integer
           x-nullable: true
